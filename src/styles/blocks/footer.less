@@ -1,0 +1,42 @@
+// main: ../App.less
+
+.footer {
+  margin: 0 auto;
+  padding: 92px 0 24px;
+  max-width: 1280px;
+  width: calc(100% - 48px * 2);
+  display: flex;
+  justify-content: space-between;
+  &__copyright {
+    color: goldenrod;
+    margin: 0;
+    line-height: 1.14;
+    font-size: 2rem;
+  }
+  &__link {
+    .resetLink();
+    color: @mainColor;
+    &_type_back {
+    }
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footer {
+    padding: 88px 0 24px;
+    width: calc(100% - 24px * 2);
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .footer {
+    margin: 0;
+    min-width: 186px;
+    width: auto;
+    padding: 64px 118px 24px 16px;
+    flex-direction: column;
+  }
+}

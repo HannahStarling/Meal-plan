@@ -1,0 +1,43 @@
+// main: ../App.less
+
+.recipe {
+  position: relative;
+  display: grid;
+  grid-template-areas:
+    'title . image'
+    'ingredients . image'
+    'method-subtitle . image'
+    'method method method';
+  grid-template-rows: 50px 250px 50px;
+  grid-template-columns: 1fr 1fr 1fr;
+  .dottedBorder(@mainColor);
+  z-index: 2;
+  &__img {
+    width: 100%;
+    position: relative;
+    transform: translate(10px, -10px);
+    grid-area: image;
+    z-index: 0;
+  }
+  &__title {
+    padding: 1rem 0 0 1rem;
+    grid-area: title;
+  }
+  &__ingredients {
+    grid-area: ingredients;
+    &-subtitle {
+      padding: 1rem 0 0 1rem;
+      grid-area: ingredients-subtitle;
+    }
+  }
+  &__ingredient {
+  }
+  &__method {
+    padding: 1rem;
+    grid-area: method;
+    &-subtitle {
+      padding: 1rem 0 0 1rem;
+      grid-area: method-subtitle;
+    }
+  }
+}
