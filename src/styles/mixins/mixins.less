@@ -1,0 +1,26 @@
+// main: ../App.less
+
+// MIXINS
+.headings() {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.resetBox() {
+  margin: 0;
+  padding: 0;
+}
+
+.resetList() {
+  .resetBox();
+  list-style: none;
+}
+
+.resetLink() {
+  color: inherit;
+  text-decoration: none;
+}
+
+.dottedBorder(@color) {
+  border: 1px dotted @color;
+}
