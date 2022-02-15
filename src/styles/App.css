@@ -34,3 +34,22 @@ body {
 .content__title {
   font-size: 5rem;
 }
+.header {
+  margin: 0 auto;
+  padding: 1rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo__pic {
+  width: 10vw;
+  height: 10vw;
+}
+@media screen and (max-width: 680px) {
+  .logo .logo {
+    width: 44.375vw;
+    max-width: 176px;
+    height: 13.125vw;
+  }
+}
