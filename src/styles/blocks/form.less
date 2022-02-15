@@ -1,0 +1,43 @@
+// main: ../App.less
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1vh;
+  &__title {
+    justify-self: flex-start;
+    align-self: flex-start;
+  }
+  &__input {
+    background: transparent;
+    border: 1px dotted @mainColor;
+    width: 33%;
+    padding: 2vh;
+    outline: none;
+    color: @userColor;
+    &-container {
+      width: 100%;
+      border: none;
+      display: flex;
+      justify-content: space-around;
+    }
+    &_type_textarea {
+      background: transparent;
+      border: 1px dotted @mainColor;
+      width: 100%;
+      padding: 2vh;
+      outline: none;
+      color: @userColor;
+    }
+    &::placeholder {
+      color: @mainColor;
+    }
+  }
+  &__btn {
+    &_action_submit {
+    }
+  }
+}
