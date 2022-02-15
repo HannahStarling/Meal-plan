@@ -16,7 +16,7 @@ function Menu({ className }) {
       <NavLink to='/calendar' className={className} activeClassName={`${className}_current`}>
         calendar
       </NavLink>
-      <NavLink to='/ newrecipe' className={className} activeClassName={`${className}_current`}>
+      <NavLink to='/newrecipe' className={className} activeClassName={`${className}_current`}>
         new&nbsp;recipe
       </NavLink>
     </nav>
