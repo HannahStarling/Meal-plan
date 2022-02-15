@@ -1,5 +1,6 @@
 import React from 'react';
 import { Route, Switch } from 'react-router-dom';
+import NotFound from './NotFound';
 
 function Main() {
   return (
@@ -18,7 +19,7 @@ function Main() {
           <section className='recipes'>Drag and drop avalible soon...</section>
         </Route>
         <Route path='*'>
-          <section>404 Not found</section>
+          <NotFound />
         </Route>
       </Switch>
     </main>
