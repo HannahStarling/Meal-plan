@@ -27,6 +27,7 @@ body {
 .content {
   margin: 0 auto;
   padding: 1rem;
+  min-height: 60vh;
   width: 100%;
   display: grid;
   gap: 5vh;
@@ -52,4 +53,20 @@ body {
     max-width: 176px;
     height: 13.125vw;
   }
+}
+.menu {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.6em;
+  min-width: 6em;
+}
+.menu__item {
+  color: inherit;
+  text-decoration: none;
+  width: fit-content;
+  padding: 5%;
+}
+.menu__item_current {
+  border: 1px solid goldenrod;
+  border-radius: 10px;
 }

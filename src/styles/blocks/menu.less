@@ -1,0 +1,17 @@
+// main: ../App.less
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.6em;
+  min-width: 6em;
+  &__item {
+    .resetLink();
+    width: fit-content;
+    padding: 5%;
+    &_current {
+      border: 1px solid @mainColor;
+      border-radius: 10px;
+    }
+  }
+}
