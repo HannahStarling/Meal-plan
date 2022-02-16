@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Route, Switch } from 'react-router-dom';
 import { recipesData } from '../utils/data';
+import ComingSoon from './UI/ComingSoon';
 import NotFound from './NotFound';
 import Recipe from './Recipe';
 import RecipeForm from './RecipeForm';
@@ -16,7 +17,7 @@ function Main() {
     <main className='content'>
       <Switch>
         <Route exact path='/'>
-          <section>Welcome to planing App!</section>
+          <ComingSoon />
         </Route>
         <Route path='/recipes'>
           <section className='recipes'>
@@ -29,7 +30,10 @@ function Main() {
           <RecipeForm create={createRecipe} title='Add recipe:' buttonText='CREATE' />
         </Route>
         <Route path='/calendar'>
-          <section className='recipes'>Drag and drop avalible soon...</section>
+          <ComingSoon />
+        </Route>
+        <Route path='/shoppinglist'>
+          <ComingSoon />
         </Route>
         <Route path='*'>
           <NotFound />
