@@ -5,6 +5,7 @@ import ComingSoon from './UI/ComingSoon';
 import NotFound from './NotFound';
 import Recipe from './Recipe';
 import RecipeForm from './RecipeForm';
+import About from './About';
 
 function Main() {
   const [recipes, setRecipes] = useState([...recipesData]);
@@ -17,7 +18,7 @@ function Main() {
     <main className='content'>
       <Switch>
         <Route exact path='/'>
-          <ComingSoon />
+          <About />
         </Route>
         <Route path='/recipes'>
           <section className='recipes'>
